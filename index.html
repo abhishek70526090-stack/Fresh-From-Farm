@@ -1,1 +1,59 @@
-<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fresh From Farm</title><style>*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f5faf3;color:#17351e}header{background:#17652d;color:#fff;padding:15px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0}.logo{font-size:24px;font-weight:800}.logo span{color:#c8f27b}nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:bold}.hero{padding:65px 6%;background:linear-gradient(120deg,#dff3c9,#fff);display:flex;align-items:center;justify-content:space-between;gap:30px}.hero h1{font-size:clamp(36px,6vw,58px);margin:0 0 15px}.hero p{font-size:19px;line-height:1.6;max-width:650px}.art{font-size:100px}.btn{display:inline-block;background:#21823c;color:white;padding:12px 18px;border:0;border-radius:9px;text-decoration:none;font-weight:bold;cursor:pointer;margin:5px 4px 0 0}section{padding:52px 6%}.title{text-align:center;font-size:31px;margin-bottom:28px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card{background:white;padding:18px;border-radius:15px;box-shadow:0 5px 18px #0001}.pic{height:145px;border-radius:11px;background:#e5f3d9;display:flex;align-items:center;justify-content:center;font-size:65px}.price{font-size:20px;font-weight:800;color:#1c7332;margin-top:10px}.about{text-align:center;background:#eaf6df;line-height:1.8}.contact{text-align:center;background:#17652d;color:white}footer{text-align:center;background:#0d3218;color:white;padding:20px}.cart{position:fixed;right:18px;bottom:18px;background:#f3b51b;border:0;border-radius:50px;padding:14px 18px;font-weight:bold;cursor:pointer}.box{display:none;position:fixed;right:18px;bottom:78px;width:min(370px,calc(100% - 36px));background:#fff;padding:20px;border-radius:16px;box-shadow:0 10px 40px #0004;z-index:5}input,textarea,select{width:100%;padding:11px;margin:7px 0 12px;border:1px solid #ccd8cc;border-radius:8px}@media(max-width:700px){nav{display:none}.hero{flex-direction:column;text-align:center}.art{font-size:70px}}</style></head><body><header><div class="logo">🌱 Fresh <span>From Farm</span></div><nav><a href="#home">होम</a><a href="#products">उत्पाद</a><a href="#order">ऑर्डर</a><a href="#contact">संपर्क</a></nav></header><section class="hero" id="home"><div><h1>खेत से सीधे<br>आपके घर तक 🌾</h1><p>Fresh From Farm पर प्राकृतिक और ऑर्गेनिक कृषि उत्पाद प्राप्त करें।</p><a class="btn" href="#products">🛒 उत्पाद देखें</a><a class="btn" href="https://wa.me/917052609099" target="_blank">📲 WhatsApp</a></div><div class="art">🌱🌾🥬</div></section><section id="products"><h2 class="title">हमारे उत्पाद</h2><div class="grid"><article class="card"><div class="pic">🧴</div><h3>Natural Humic Acid</h3><p>प्राकृतिक कृषि इनपुट।</p><div class="price">₹299 / 1 लीटर</div><button class="btn" onclick="add('Natural Humic Acid',299)">कार्ट में डालें</button></article><article class="card"><div class="pic">🌿</div><h3>FFJ Fermented Fruit Juice</h3><p>कृषि उपयोग के लिए fermented fruit juice.</p><div class="price">₹249 / 1 लीटर</div><button class="btn" onclick="add('FFJ Fermented Fruit Juice',249)">कार्ट में डालें</button></article><article class="card"><div class="pic">🌱</div><h3>Trichoderma</h3><p>जैविक कृषि इनपुट।</p><div class="price">₹199 / पैक</div><button class="btn" onclick="add('Trichoderma',199)">कार्ट में डालें</button></article><article class="card"><div class="pic">🪴</div><h3>Organic Cow Dung Ash</h3><p>कृषि और मिट्टी के उपयोग के लिए।</p><div class="price">₹149 / पैक</div><button class="btn" onclick="add('Organic Cow Dung Ash',149)">कार्ट में डालें</button></article><article class="card"><div class="pic">🥬</div><h3>Organic Vegetables</h3><p>उपलब्धता के अनुसार ताजी सब्जियाँ।</p><div class="price">कीमत संपर्क करें</div><button class="btn" onclick="add('Organic Vegetables',0)">ऑर्डर करें</button></article><article class="card"><div class="pic">🌾</div><h3>Organic Mansoori Rice</h3><p>ऑर्गेनिक चावल।</p><div class="price">₹50 / 1 किलो</div><button class="btn" onclick="add('Organic Mansoori Rice',50)">कार्ट में डालें</button></article></div></section><section class="about"><h2 class="title">Fresh From Farm</h2><p>हमारा उद्देश्य किसानों और ग्राहकों के बीच सीधा संबंध बनाना और प्राकृतिक खेती से जुड़े उत्पाद आसानी से उपलब्ध कराना है।<br><b>खेत से सीधे आपके घर तक।</b></p></section><section id="order"><h2 class="title">ऑर्डर विवरण</h2><div style="max-width:600px;margin:auto"><label>नाम</label><input id="name" placeholder="अपना नाम"><label>मोबाइल</label><input id="phone" placeholder="मोबाइल नंबर"><label>डिलीवरी पता</label><textarea id="address" placeholder="पूरा पता और पिनकोड"></textarea><label>पेमेंट</label><select id="payment"><option>Cash on Delivery</option><option>UPI</option></select><button class="btn" onclick="sendOrder()">📲 WhatsApp पर ऑर्डर भेजें</button></div></section><section class="contact" id="contact"><h2>संपर्क करें</h2><p>📞 7052609099</p><p>📍 Jalilpur Lachhbar Vajaha, Barabanki, Uttar Pradesh</p><p>💳 UPI + COD</p><a class="btn" style="background:#f3c02b;color:#132014" href="https://wa.me/917052609099" target="_blank">WhatsApp पर बात करें</a></section><button class="cart" onclick="toggle()">🛒 Cart (<span id="count">0</span>)</button><div class="box" id="box"><h3>आपका Cart</h3><div id="items">Cart खाली है।</div><hr>कुल: ₹<b id="total">0</b><br><button class="btn" onclick="location.hash='order';toggle()">Checkout</button></div><footer>© 2026 Fresh From Farm • खेत से सीधे आपके घर तक 🌱</footer><script>let cart=[];function add(n,p){cart.push({n,p});render();document.getElementById('box').style.display='block'}function render(){count.textContent=cart.length;let t=0;items.innerHTML=cart.map((x,i)=>{t+=x.p;return (i+1)+'. '+x.n+' — ₹'+x.p+'<br>'}).join('')||'Cart खाली है।';total.textContent=t}function toggle(){box.style.display=box.style.display==='block'?'none':'block'}function sendOrder(){if(!cart.length)return alert('पहले उत्पाद चुनें।');let t=cart.reduce((s,x)=>s+x.p,0);let m='नमस्ते Fresh From Farm,%0Aऑर्डर:%0A'+cart.map((x,i)=>(i+1)+'. '+x.n+' - ₹'+x.p).join('%0A')+'%0Aकुल: ₹'+t+'%0Aनाम: '+encodeURIComponent(name.value)+'%0Aमोबाइल: '+encodeURIComponent(phone.value)+'%0Aपता: '+encodeURIComponent(address.value)+'%0APayment: '+encodeURIComponent(payment.value);window.open('https://wa.me/917052609099?text='+m,'_blank')}</script></body></html>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fresh From Farm — Shop & Social</title>
+<meta name="description" content="Fresh From Farm - Agriculture e-commerce and farmer social community">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="leaf">🌿</span><div><b>Fresh From Farm</b><small>किसान से आपके घर तक</small></div></div>
+  <div class="search"><input id="searchInput" placeholder="Product, किसान या post खोजें..."><button onclick="searchAll()">🔎</button></div>
+  <div class="actions"><button onclick="openAuth()">👤 Login</button><button class="cartBtn" onclick="showCart()">🛒 <span id="cartCount">0</span></button></div>
+</header>
+
+<nav class="nav">
+  <button class="active" onclick="showPage('home',this)">🏠 Home</button>
+  <button onclick="showPage('shop',this)">🛍️ Shop</button>
+  <button onclick="showPage('social',this)">📸 Social</button>
+  <button onclick="openCreatePost()">➕ Create Post</button>
+  <button onclick="openSell()">🌾 Sell Product</button>
+  <button onclick="showPage('orders',this)">📦 My Orders</button>
+</nav>
+
+<main>
+<section id="home" class="page">
+  <div class="hero">
+    <div><p class="eyebrow">FRESH • LOCAL • FARMER FIRST</p><h1>खेती, बाजार और<br><span>सोशल नेटवर्क</span> एक जगह</h1><p>किसान अपनी खेती दिखाएँ, उत्पाद बेचें और ग्राहकों से सीधे जुड़ें।</p><div class="heroBtns"><button class="primary" onclick="showPage('shop')">Shop Now</button><button class="secondary" onclick="showPage('social')">Social Feed</button></div></div>
+    <div class="heroArt">🌾<div>👨‍🌾</div><span>🥬 🥕 🍚</span></div>
+  </div>
+  <div class="stats"><div><b>Fresh</b><span>Farm Products</span></div><div><b>Direct</b><span>Farmer Connect</span></div><div><b>Social</b><span>Community Feed</span></div><div><b>Secure</b><span>Easy Orders</span></div></div>
+  <h2>लोकप्रिय उत्पाद</h2><div id="homeProducts" class="products"></div>
+</section>
+
+<section id="shop" class="page hidden">
+  <div class="sectionHead"><div><p class="eyebrow">STORE</p><h2>Fresh Products</h2></div><select id="category" onchange="renderProducts()"><option value="all">All Categories</option><option>Organic Vegetables</option><option>Organic Food</option><option>Farm Inputs</option></select></div>
+  <div id="products" class="products"></div>
+</section>
+
+<section id="social" class="page hidden">
+  <div class="sectionHead"><div><p class="eyebrow">COMMUNITY</p><h2>Farm Social Feed</h2></div><button class="primary" onclick="openCreatePost()">＋ Post करें</button></div>
+  <div class="feed" id="feed"></div>
+</section>
+
+<section id="orders" class="page hidden">
+  <p class="eyebrow">ACCOUNT</p><h2>मेरे Orders</h2><div id="ordersList" class="orders"></div>
+</section>
+</main>
+
+<div id="modal" class="modal hidden"><div class="modalBox"><button class="close" onclick="closeModal()">✕</button><div id="modalContent"></div></div></div>
+<div id="toast"></div>
+<footer><b>Fresh From Farm</b> · किसान • ग्राहक • समुदाय <span>© 2026</span></footer>
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="backend.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
