@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Track Order - Fresh From Farm</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#261a00",
+                        "secondary-container": "#91f78e",
+                        "on-primary-fixed-variant": "#23501e",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#a1d494",
+                        "on-secondary-container": "#00731e",
+                        "error-container": "#ffdad6",
+                        "background": "#f8faf8",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#4b3600",
+                        "surface-container-low": "#f2f4f2",
+                        "surface-container": "#eceeec",
+                        "surface": "#f8faf8",
+                        "primary-container": "#2d5a27",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#002204",
+                        "surface-variant": "#e1e3e1",
+                        "inverse-surface": "#2e3130",
+                        "primary-fixed": "#bcf0ae",
+                        "surface-container-high": "#e6e9e7",
+                        "on-primary-fixed": "#002201",
+                        "surface-bright": "#f8faf8",
+                        "surface-dim": "#d8dad9",
+                        "outline-variant": "#c2c9bb",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#ffdf9e",
+                        "on-tertiary-fixed-variant": "#5b4300",
+                        "on-surface-variant": "#42493e",
+                        "on-secondary-fixed-variant": "#005313",
+                        "inverse-on-surface": "#eff1ef",
+                        "surface-tint": "#3b6934",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#191c1b",
+                        "on-primary-container": "#9dd090",
+                        "secondary-fixed-dim": "#78dc77",
+                        "tertiary-fixed-dim": "#fabd00",
+                        "inverse-primary": "#a1d494",
+                        "secondary": "#006e1c",
+                        "primary": "#154212",
+                        "tertiary-container": "#674c00",
+                        "secondary-fixed": "#94f990",
+                        "on-tertiary-container": "#f6b900",
+                        "outline": "#72796e",
+                        "surface-container-highest": "#e1e3e1",
+                        "on-background": "#191c1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "md": "16px",
+                        "gutter": "16px",
+                        "lg": "24px",
+                        "margin-mobile": "20px",
+                        "xl": "32px",
+                        "sm": "8px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "label-sm": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .texture-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+        .progress-line-active {
+            background: linear-gradient(to right, #2d5a27 50%, #e1e3e1 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all 1s ease;
+        }
+        .progress-line-active.filled {
+            background-position: left bottom;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col texture-bg">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky bg-surface/80 backdrop-blur-md shadow-sm z-50">
+<div class="flex justify-between items-center px-lg py-md max-w-7xl mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary">
+                Fresh From Farm
+            </div>
+<nav class="hidden md:flex gap-lg items-center font-body-md text-body-md">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Marketplace</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Bulk Orders</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Farm Stories</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">About Us</a>
+</nav>
+<div class="flex items-center gap-md">
+<button class="text-on-surface-variant hover:text-primary transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow max-w-7xl mx-auto w-full px-margin-mobile md:px-lg py-xl">
+<!-- Header Section -->
+<div class="text-center mb-xl">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-sm">Track Your Fresh Harvest</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Follow your organic produce from our fields directly to your doorstep.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-xl">
+<!-- Left Column: Tracking Input & Details -->
+<div class="lg:col-span-1 flex flex-col gap-lg">
+<!-- Tracking Form Card -->
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-sm border border-surface-variant">
+<h2 class="font-headline-md text-headline-md text-primary mb-md">Find Your Order</h2>
+<form class="flex flex-col gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="order-id">Order ID</label>
+<input class="h-12 px-md border border-outline-variant rounded-lg bg-surface-container-lowest focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors" id="order-id" placeholder="e.g. FFF-89234" type="text"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="contact-info">Phone Number or Email</label>
+<input class="h-12 px-md border border-outline-variant rounded-lg bg-surface-container-lowest focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors" id="contact-info" placeholder="Enter details used at checkout" type="text"/>
+</div>
+<button class="mt-sm h-12 bg-primary-container text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary transition-colors flex items-center justify-center gap-sm shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+                            Track Order
+                        </button>
+</form>
+</div>
+<!-- Order Details Summary Card (Simulated Active State) -->
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-sm border border-surface-variant relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-tertiary-fixed-dim text-on-tertiary-fixed px-md py-xs rounded-bl-lg font-label-sm text-label-sm shadow-sm">
+                        Today by 6:00 PM
+                    </div>
+<h3 class="font-label-md text-label-md text-on-surface-variant mb-xs">Order Summary</h3>
+<p class="font-headline-md text-headline-md text-primary mb-md">#FFF-89234</p>
+<div class="flex flex-col gap-sm">
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Delivery Partner</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Green Mile Logistics (Driver: Sam)</p>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="home_pin">home_pin</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Destination</p>
+<p class="font-body-md text-body-md text-on-surface-variant">123 Farmville Road, Cityville</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Support Section -->
+<div class="bg-surface-container-low rounded-xl p-md border border-surface-variant flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md text-on-surface">Need help?</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Contact our support team.</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-lowest border border-outline-variant flex items-center justify-center text-primary hover:bg-surface-variant transition-colors shadow-sm">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Visual Stepper -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-xl p-lg shadow-sm border border-surface-variant flex flex-col">
+<h2 class="font-headline-md text-headline-md text-primary mb-xl border-b border-surface-variant pb-sm">Tracking Progress</h2>
+<div class="flex-grow flex flex-col justify-center px-md py-lg">
+<div class="relative">
+<!-- Vertical line for mobile, horizontal for md+ -->
+<div class="absolute left-6 top-10 bottom-10 w-0.5 bg-surface-variant md:hidden"></div>
+<div class="hidden md:block absolute top-6 left-10 right-10 h-0.5 bg-surface-variant"></div>
+<!-- Animated active line -->
+<div class="absolute left-6 top-10 w-0.5 bg-primary-container md:hidden" style="height: 60%;"></div>
+<div class="hidden md:block absolute top-6 left-10 h-0.5 bg-primary-container transition-all duration-1000 ease-in-out w-[60%]"></div>
+<div class="flex flex-col md:flex-row justify-between gap-lg relative z-10">
+<!-- Step 1: Placed -->
+<div class="flex flex-row md:flex-col items-center gap-md md:gap-sm relative">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md z-10 shrink-0">
+<span class="material-symbols-outlined" data-icon="shopping_basket">shopping_basket</span>
+</div>
+<div class="md:text-center">
+<p class="font-label-md text-label-md text-on-surface">Order Placed</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Aug 12, 08:30 AM</p>
+</div>
+</div>
+<!-- Step 2: Confirmed -->
+<div class="flex flex-row md:flex-col items-center gap-md md:gap-sm relative">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md z-10 shrink-0">
+<span class="material-symbols-outlined" data-icon="check_circle">check_circle</span>
+</div>
+<div class="md:text-center">
+<p class="font-label-md text-label-md text-on-surface">Order Confirmed</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Aug 12, 09:15 AM</p>
+</div>
+</div>
+<!-- Step 3: Harvested -->
+<div class="flex flex-row md:flex-col items-center gap-md md:gap-sm relative">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md z-10 shrink-0">
+<span class="material-symbols-outlined" data-icon="agriculture">agriculture</span>
+</div>
+<div class="md:text-center">
+<p class="font-label-md text-label-md text-on-surface">Harvested &amp; Packed</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Aug 13, 06:00 AM</p>
+</div>
+</div>
+<!-- Step 4: Out for Delivery (Active) -->
+<div class="flex flex-row md:flex-col items-center gap-md md:gap-sm relative">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container border-2 border-primary-container flex items-center justify-center shadow-lg z-10 shrink-0 animate-pulse">
+<span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
+</div>
+<div class="md:text-center">
+<p class="font-label-md text-label-md text-primary">Out for Delivery</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Arriving Today</p>
+</div>
+</div>
+<!-- Step 5: Delivered (Pending) -->
+<div class="flex flex-row md:flex-col items-center gap-md md:gap-sm relative opacity-50">
+<div class="w-12 h-12 rounded-full bg-surface-container-high text-on-surface-variant border border-outline-variant flex items-center justify-center z-10 shrink-0">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+</div>
+<div class="md:text-center">
+<p class="font-label-md text-label-md text-on-surface-variant">Delivered</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Pending</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Background Element -->
+<div class="mt-lg rounded-lg h-32 bg-surface-container overflow-hidden relative border border-surface-variant">
+<div class="absolute inset-0 bg-cover bg-center opacity-40" data-alt="A detailed wide shot of a lush, vibrant green organic farm field under a bright morning sun. The lighting is soft and golden, creating a warm, fresh, and inviting agro-modernist aesthetic. The focus is on the rich texture of the soil and the healthy green leaves of the crops, conveying a sense of premium quality and grounded transparency." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCl3t3etCwlCOK4SLZyjDOD1BedIzDpnDcCo9wYdZGTtbPJwE-mkRF_kh2ImTmNGC92YzoZR7wqWC7ZOfVwZw9qc-xTmT6FEepBp1lGra9WuXc4-Mek0A7LN73Z5805b7dR8RymuNTKK5Wr5onV5GGKWfUK57F4Tm3NvvZ5xsLXqUmUZJo_c6bODZf3CCsz3sKbK-2RhoIZra-ULmI-B78q1-sIRDVfc8EPboriLhVQh9bXQFCqPaWLbA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent"></div>
+<div class="absolute bottom-md left-md right-md flex justify-between items-end">
+<p class="font-label-md text-label-md text-primary bg-surface-container-lowest/90 px-sm py-xs rounded backdrop-blur-sm">Farm Origin: Sunny Acres</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-xl bg-surface-container-highest dark:bg-surface-container-lowest py-xl">
+<div class="flex flex-col md:flex-row justify-between items-start gap-lg px-lg max-w-7xl mx-auto">
+<div class="flex flex-col gap-sm">
+<div class="font-headline-md text-headline-md text-primary">
+                    Fresh From Farm
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Fresh From Farm. Rooted in Transparency.</p>
+</div>
+<nav class="flex flex-col md:flex-row gap-lg font-label-md text-label-md">
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Sustainability Report</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Farmer Support</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Contact Us</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Terms of Service</a>
+</nav>
+</div>
+</footer>
+</body></html>
