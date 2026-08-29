@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Farm Fresh Potatoes - Fresh From Farm</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#3b6934",
+                        "background": "#f8faf8",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#c2c9bb",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#e6e9e7",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#94f990",
+                        "primary-fixed-dim": "#a1d494",
+                        "tertiary": "#4b3600",
+                        "surface-variant": "#e1e3e1",
+                        "on-background": "#191c1b",
+                        "surface-container": "#eceeec",
+                        "on-surface-variant": "#42493e",
+                        "on-error-container": "#93000a",
+                        "outline": "#72796e",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#191c1b",
+                        "surface-container-low": "#f2f4f2",
+                        "on-tertiary-container": "#f6b900",
+                        "on-primary": "#ffffff",
+                        "primary": "#154212",
+                        "on-primary-fixed": "#002201",
+                        "secondary": "#006e1c",
+                        "surface": "#f8faf8",
+                        "surface-bright": "#f8faf8",
+                        "primary-fixed": "#bcf0ae",
+                        "on-tertiary-fixed-variant": "#5b4300",
+                        "inverse-surface": "#2e3130",
+                        "on-secondary-fixed": "#002204",
+                        "inverse-on-surface": "#eff1ef",
+                        "on-tertiary-fixed": "#261a00",
+                        "tertiary-fixed-dim": "#fabd00",
+                        "tertiary-container": "#674c00",
+                        "on-secondary-fixed-variant": "#005313",
+                        "on-primary-container": "#9dd090",
+                        "secondary-container": "#91f78e",
+                        "on-primary-fixed-variant": "#23501e",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#a1d494",
+                        "primary-container": "#2d5a27",
+                        "on-secondary-container": "#00731e",
+                        "secondary-fixed-dim": "#78dc77",
+                        "surface-dim": "#d8dad9",
+                        "tertiary-fixed": "#ffdf9e",
+                        "surface-container-highest": "#e1e3e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "margin-mobile": "20px",
+                        "xl": "32px",
+                        "gutter": "16px",
+                        "unit": "4px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "body-md": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .texture-bg {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md texture-bg min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky bg-surface/80 backdrop-blur-md shadow-sm z-50">
+<div class="flex justify-between items-center px-lg py-md max-w-7xl mx-auto">
+<div class="flex items-center gap-md">
+<img alt="Fresh From Farm" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WIKEygshjrWT9XLfYtKMX6TMXTd7wpiLnL6t5EaeZuQNPhFnmx1Vz76HJPzPkytySTrf01s_2m-IL29SHlIFqdECCOjVZ4rVB-QTd3ke-v9BrgHMBtiAY5yVNDeUwqQyk2i5_oT4JtAHetFUyS0Y9pemtvcFCKc1a3w5Mt9axNj1lVWqk389d5YdSCeceKfXv6997iyeWXXqNrm3ESyuKIyrbPB1BmAOW_uPl1rIvFwvWAAZG2cnAd8DcE"/>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary hidden md:block">Fresh From Farm</span>
+</div>
+<nav class="hidden md:flex items-center gap-lg font-body-md text-body-md">
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 transition-all active:scale-95" href="#">Marketplace</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200 active:scale-95" href="#">Bulk Orders</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200 active:scale-95" href="#">Farm Stories</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200 active:scale-95" href="#">About Us</a>
+</nav>
+<div class="flex items-center gap-md text-primary dark:text-primary-fixed-dim">
+<button class="p-xs hover:bg-surface-variant rounded-full transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_cart</span>
+</button>
+<button class="p-xs hover:bg-surface-variant rounded-full transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow max-w-7xl mx-auto px-margin-mobile md:px-lg py-xl w-full">
+<!-- Breadcrumbs -->
+<nav class="text-on-surface-variant font-label-sm text-label-sm mb-lg flex items-center gap-xs">
+<a class="hover:text-primary transition-colors" href="#">Marketplace</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Vegetables</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Root</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-primary font-bold">Farm Fresh Potatoes</span>
+</nav>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-xl">
+<!-- Image Gallery Bento -->
+<div class="md:col-span-7 flex flex-col gap-sm">
+<div class="w-full h-[400px] md:h-[600px] rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm relative">
+<img class="w-full h-full object-cover" data-alt="A beautifully composed, high-resolution photograph of freshly harvested, earth-dusted organic rustic potatoes overflowing from a woven wicker basket. The setting is a sunlit rustic wooden table in a well-lit barn or modern farmhouse kitchen. The lighting is natural, warm, and highly professional, creating soft shadows that emphasize the tactile, organic texture of the potato skin. The mood is wholesome, premium, and connected to nature. The overall color palette features earthy browns, warm sunlight yellows, and subtle hints of deep forest green in the slightly blurred background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtFG2XyE1fCIZf84sqqkRYVQbI3eVzeenr3enzcNQnMrDsUfn8OvOA0avI9aqOmgOhJNuoaITu2X7SVw4fx_i5Ik4QXGKWUL04LuGwF0J6c5wbBwh97qWyTOwTQlutSZboKJ5EHEj4Di0Cx77-9o0E9kXMhLwDCak9jljooAX2iAUdLWRSa62eUDaPPU6jMK5SSRpwWCK7l4a0b5-cj8M41k_NJxICtNo1BtQG3lZX4Fd_jZGNtzDRZA"/>
+<!-- Badges -->
+<div class="absolute top-md left-md flex gap-sm">
+<span class="bg-secondary text-on-secondary px-md py-xs rounded-full font-label-sm text-label-sm shadow-sm flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+                            Organic
+                        </span>
+<span class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-md py-xs rounded-full font-label-sm text-label-sm shadow-sm">
+                            Locally Grown
+                        </span>
+</div>
+</div>
+<!-- Thumbnails -->
+<div class="grid grid-cols-4 gap-sm">
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-lowest border-2 border-primary cursor-pointer">
+<img class="w-full h-full object-cover" data-alt="Close-up macro shot of the earthy texture of rustic farm fresh potatoes sitting on a clean wooden surface, natural warm lighting emphasizing freshness and premium organic quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPMRU1_16I0jBHITdl3KTI9ktwacmFw-UfUhE50N5yHSAKR6Wb_ks2jq02MtuKdjA1O0h12lnvc8oMGzpvwyL-NYMtGrw1bnwNCbUOawUEO1phfzE4dgmx6JcwLklLPpm1de3CnSqXUOODxd1VoPJDNjaIun4DQughdw1qARJX0HiV03nEKg_E4ajdrqsqVr1FKAH3F7vn0JEpJaHjbvsYjdmACuAbIl4apMlyZVSpyGzi7tMDteAv-Q"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-lowest border-2 border-transparent hover:border-outline-variant cursor-pointer transition-colors">
+<img class="w-full h-full object-cover" data-alt="A handful of freshly washed rustic potatoes held by farmer's hands, set against a blurred background of green fields. Bright, optimistic natural lighting, premium agricultural aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB04TjeFWlUWQEBD1r3us-enA8arkglpMYBIgnmEuR6V8YfKW3n_x8yDRDtWISetGVH7OnHfjEkFG2UbzQ28rNguMhEONbhKOLQsv2YOpfmvNz0xA1OGeWNKDhrFepN675Kl-PiU2GFJwYT1K88yGWFc-9Rtf_IooWQ5Blfiejy3-dEGZYsg7f9pKkOoFw57C7W3T-0C6pMFHOChyZeRBxo8OTXAuMp3qoTxJ0p0Eo3oRufOscBbUcKFQ"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-lowest border-2 border-transparent hover:border-outline-variant cursor-pointer transition-colors">
+<img class="w-full h-full object-cover" data-alt="Sliced raw rustic potatoes on a premium cutting board, next to fresh herbs like rosemary. Culinary prep setting, clean bright natural lighting, modern high-end kitchen aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXs_Hl6RbQ5zV5G8Qyd2mKcLfQBbS94bxBevKk0y9DX3IUeFTCC5NPQiWyjzAHvR6wG63cjp_88syiuB2YjP1cA-xVzmsWmo7MfGA9mRBEYPOqgOmwi6jICOcLOQ4flXZ9aCzJRbJabn6SIgORXDdCjCw2LXn6H8pEjOST0RJrA0-oaZG_p8Ct6EKbY4M4W1m7UvAniqDsKJ1mYI20U343UyA_B1TZnGZzjjpIvU4xc7Y6ayc5N16elQ"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-lowest border-2 border-transparent hover:border-outline-variant cursor-pointer transition-colors">
+<img class="w-full h-full object-cover" data-alt="A rustic burlap sack filled with organic potatoes sitting on a sunlit wooden porch, evoking an authentic farm-to-table origin story. Warm natural tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD00aFf6vvHSiZAEa47dB30nuTMzUEO0_EIjt2DrcV03JBbOz_Z75bgYLM9jx_NZf7wEEBKRfY2m2EpPMWvpDdC58ioUGbp2uFRsgqX2IWJ1y_CJwg2HLgw3xBAlE3GYdE7-1qNwDbkKnqxwAxVSx222hghuGbM9oqDrOmD66HQQDDwFjugP2DburbqoDLpRSoYF_gyFbvTt_ISW07yAs4fiVRsIIeE4W59V2J2OKbVv92KYGAdmhVq6w"/>
+</div>
+</div>
+</div>
+<!-- Product Details -->
+<div class="md:col-span-5 flex flex-col gap-lg sticky top-32 h-fit">
+<!-- Header -->
+<div class="flex flex-col gap-sm">
+<div class="flex items-center gap-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-on-surface font-bold">4.8</span>
+<span class="underline cursor-pointer hover:text-primary">(124 reviews)</span>
+</div>
+<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface">Farm Fresh Potatoes</h1>
+<div class="flex items-baseline gap-sm">
+<span class="font-headline-lg text-headline-md md:text-headline-lg text-primary">$3.80</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ kg</span>
+</div>
+</div>
+<hr class="border-outline-variant/30"/>
+<!-- Origin & Shipping -->
+<div class="flex flex-col gap-md">
+<div class="flex items-center gap-md p-md bg-surface-container-low rounded-lg border border-outline-variant/20">
+<div class="bg-primary-container text-on-primary-container p-sm rounded-full">
+<span class="material-symbols-outlined">local_shipping</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Ships fresh tomorrow morning</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Order by 6 PM for next-day harvest.</p>
+</div>
+</div>
+</div>
+<!-- Weight Selection -->
+<div class="flex flex-col gap-sm">
+<label class="font-label-md text-label-md text-on-surface">Select Weight</label>
+<div class="grid grid-cols-3 gap-sm">
+<button class="py-md px-sm rounded-lg border-2 border-outline-variant bg-surface-container-lowest text-on-surface font-label-md hover:border-primary transition-colors focus:outline-none">
+                            1 kg
+                        </button>
+<button class="py-md px-sm rounded-lg border-2 border-outline-variant bg-surface-container-lowest text-on-surface font-label-md hover:border-primary transition-colors focus:outline-none">
+                            2 kg
+                        </button>
+<button class="relative py-md px-sm rounded-lg border-2 border-primary bg-primary/5 text-primary font-label-md transition-colors focus:outline-none">
+                            5 kg
+                            <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-tertiary-fixed-dim text-on-tertiary-fixed text-[10px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">Save 15%</span>
+</button>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex gap-md mt-sm items-center">
+<!-- Quantity -->
+<div class="flex items-center border border-outline-variant rounded-lg h-12 bg-surface-container-lowest">
+<button class="px-md h-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<span class="font-label-md text-label-md w-8 text-center">1</span>
+<button class="px-md h-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+<!-- Add to Cart -->
+<button class="flex-1 h-12 bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center gap-sm active:scale-[0.98]">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+<!-- Description -->
+<div class="mt-md flex flex-col gap-sm">
+<h3 class="font-label-md text-label-md text-on-surface">About this harvest</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Our premium rustic potatoes are grown in rich, nutrient-dense organic soil. Hand-harvested for maximum freshness, they boast a robust, earthy flavor perfect for roasting, mashing, or hearty stews. Free from synthetic pesticides, they bring true field-to-table authenticity to your culinary creations.
+                    </p>
+</div>
+<!-- Farmer Profile Mini -->
+<div class="mt-sm p-md bg-surface-container rounded-lg border border-outline-variant/30 flex items-center gap-md">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Portrait of an authentic, friendly local farmer in a field, wearing a sun hat and durable farming clothes. Warm sunlight, high quality corporate modern agricultural portrait style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8_vKLgBLKuHOmQrGweONk8c8CJ6hRcdFKo-NSq7WkcV9KF_v4eP7wyeue5TBTufKBJ_YjZ5i0Iwz5ZmOMQAR8pvINzVncpPI2BXRJMJTiCaRB32cjL1kAikLjxPa1lt9d6GQymX-MFnGsL5ium7NVUMvWpF5b8Kv8i3RCzwtO18M4gG2GYfdOXNY1ODMB8A5nm1HU8mNLNw_GwA0ZoxPhVzlpoPU-Aq-AVEkBfw6Lzqfr10CuQtVZOA"/>
+</div>
+<div class="flex-1">
+<p class="font-label-md text-label-md text-on-surface flex items-center gap-xs">
+                            Grown by Miller Farms
+                            <span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">30 miles away • Lancaster Valley</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-xl bg-surface-container-highest dark:bg-surface-container-lowest">
+<div class="flex flex-col md:flex-row justify-between items-start gap-lg px-lg py-xl max-w-7xl mx-auto">
+<div class="flex flex-col gap-md">
+<span class="font-headline-md text-headline-md text-primary">Fresh From Farm</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Fresh From Farm. Rooted in Transparency.</span>
+</div>
+<div class="flex flex-col md:flex-row gap-lg font-label-md text-label-md">
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Sustainability Report</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Farmer Support</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Contact Us</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
