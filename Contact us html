@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - Fresh From Farm</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface": "#191c1b",
+                      "primary-fixed-dim": "#a1d494",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed": "#ffdf9e",
+                      "on-error": "#ffffff",
+                      "on-secondary-container": "#00731e",
+                      "outline-variant": "#c2c9bb",
+                      "inverse-primary": "#a1d494",
+                      "secondary-container": "#91f78e",
+                      "on-primary-fixed": "#002201",
+                      "on-primary-container": "#9dd090",
+                      "secondary-fixed-dim": "#78dc77",
+                      "tertiary-fixed-dim": "#fabd00",
+                      "on-tertiary-fixed": "#261a00",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed": "#002204",
+                      "surface-container-high": "#e6e9e7",
+                      "primary": "#154212",
+                      "surface-tint": "#3b6934",
+                      "primary-fixed": "#bcf0ae",
+                      "surface-bright": "#f8faf8",
+                      "on-background": "#191c1b",
+                      "surface-container": "#eceeec",
+                      "inverse-on-surface": "#eff1ef",
+                      "on-surface-variant": "#42493e",
+                      "on-primary-fixed-variant": "#23501e",
+                      "on-secondary-fixed-variant": "#005313",
+                      "outline": "#72796e",
+                      "secondary": "#006e1c",
+                      "primary-container": "#2d5a27",
+                      "on-tertiary-fixed-variant": "#5b4300",
+                      "surface-container-low": "#f2f4f2",
+                      "on-primary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "surface-dim": "#d8dad9",
+                      "surface": "#f8faf8",
+                      "tertiary-container": "#674c00",
+                      "inverse-surface": "#2e3130",
+                      "on-tertiary-container": "#f6b900",
+                      "surface-variant": "#e1e3e1",
+                      "error": "#ba1a1a",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-highest": "#e1e3e1",
+                      "tertiary": "#4b3600",
+                      "background": "#f8faf8",
+                      "secondary-fixed": "#94f990",
+                      "on-error-container": "#93000a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xl": "32px",
+                      "md": "16px",
+                      "sm": "8px",
+                      "xs": "4px",
+                      "lg": "24px",
+                      "unit": "4px",
+                      "gutter": "16px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "label-md": ["Be Vietnam Pro"],
+                      "label-sm": ["Be Vietnam Pro"],
+                      "body-lg": ["Be Vietnam Pro"],
+                      "headline-lg": ["Plus Jakarta Sans"],
+                      "headline-md": ["Plus Jakarta Sans"],
+                      "headline-xl": ["Plus Jakarta Sans"],
+                      "headline-lg-mobile": ["Plus Jakarta Sans"],
+                      "body-md": ["Be Vietnam Pro"]
+              },
+              "fontSize": {
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .texture-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+        .soft-shadow {
+            box-shadow: 0 4px 20px -2px rgba(21, 66, 18, 0.08);
+        }
+        .form-input-focus:focus {
+            border-color: #2d5a27;
+            box-shadow: 0 0 0 1px #2d5a27;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md texture-bg min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<nav class="bg-surface dark:bg-surface-dim font-body-md text-body-md w-full top-0 sticky bg-surface/80 backdrop-blur-md shadow-sm z-50">
+<div class="flex justify-between items-center px-lg py-md max-w-7xl mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary cursor-pointer transition-all active:scale-95">
+                Fresh From Farm
+            </div>
+<div class="hidden md:flex gap-lg">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Marketplace</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Bulk Orders</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Farm Stories</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">About Us</a>
+<!-- Active state logic fallback, no direct match for Contact, so keeping all inactive or About Us as closest. Making Contact separate. -->
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-200" href="#">Contact Us</a>
+</div>
+<div class="flex items-center gap-md text-primary dark:text-primary-fixed-dim">
+<button class="transition-all active:scale-95 p-2 rounded-full hover:bg-surface-variant">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="transition-all active:scale-95 p-2 rounded-full hover:bg-surface-variant">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-margin-mobile md:px-lg py-xl flex flex-col gap-xl">
+<!-- Hero Section -->
+<section class="text-center max-w-3xl mx-auto py-xl">
+<h1 class="font-headline-lg-mobile md:font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary mb-md">Get in Touch</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                We're rooted in community support. Whether you have questions about our organic practices, need help with a bulk order, or just want to say hello, our farm team is here for you.
+            </p>
+</section>
+<!-- Bento Grid Contact Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-lg relative">
+<!-- Contact Form (Left) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-lg soft-shadow border border-surface-variant">
+<h2 class="font-headline-md text-headline-md text-primary mb-lg">Send us a Message</h2>
+<form class="flex flex-col gap-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="name">Full Name</label>
+<input class="rounded-DEFAULT border-outline-variant bg-surface-container-lowest text-on-surface p-3 font-body-md form-input-focus transition-colors" id="name" placeholder="Jane Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="email">Email Address</label>
+<input class="rounded-DEFAULT border-outline-variant bg-surface-container-lowest text-on-surface p-3 font-body-md form-input-focus transition-colors" id="email" placeholder="jane@example.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="subject">Subject</label>
+<select class="rounded-DEFAULT border-outline-variant bg-surface-container-lowest text-on-surface p-3 font-body-md form-input-focus transition-colors" id="subject">
+<option>General Inquiry</option>
+<option>Bulk Order Support</option>
+<option>Delivery Issue</option>
+<option>Farm Tour Booking</option>
+</select>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="message">Your Message</label>
+<textarea class="rounded-DEFAULT border-outline-variant bg-surface-container-lowest text-on-surface p-3 font-body-md form-input-focus transition-colors resize-none" id="message" placeholder="How can we help you today?" rows="5"></textarea>
+</div>
+<button class="mt-sm bg-primary-container text-on-primary-container font-label-md text-label-md py-3 px-6 rounded-lg hover:bg-primary hover:text-on-primary transition-colors duration-200 self-start flex items-center gap-sm active:scale-95" type="button">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="send">send</span>
+</button>
+</form>
+</div>
+<!-- Contact Info & Map (Right) -->
+<div class="lg:col-span-5 flex flex-col gap-lg">
+<!-- Info Card -->
+<div class="bg-primary text-on-primary rounded-xl p-lg soft-shadow flex flex-col gap-md relative overflow-hidden">
+<!-- Decorative subtle texture/shape -->
+<div class="absolute -bottom-10 -right-10 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="local_florist">local_florist</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm relative z-10">Farm Details</h3>
+<div class="flex items-start gap-md relative z-10">
+<div class="bg-primary-container/30 p-2 rounded-full mt-1">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary-fixed mb-1">Office Address</p>
+<p class="font-body-md text-body-md">123 Heritage Valley Road<br/>Greenbelt County, CA 90210</p>
+</div>
+</div>
+<div class="flex items-start gap-md relative z-10">
+<div class="bg-primary-container/30 p-2 rounded-full mt-1">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="call">call</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary-fixed mb-1">Phone Number</p>
+<p class="font-body-md text-body-md hover:text-primary-fixed-dim transition-colors cursor-pointer">705-260-9099</p>
+</div>
+</div>
+<div class="flex items-start gap-md relative z-10">
+<div class="bg-primary-container/30 p-2 rounded-full mt-1">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="mail">mail</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary-fixed mb-1">Email Address</p>
+<p class="font-body-md text-body-md hover:text-primary-fixed-dim transition-colors cursor-pointer">support@freshfromfarm.com</p>
+</div>
+</div>
+</div>
+<!-- Map Placeholder Card -->
+<div class="bg-surface-container-lowest rounded-xl p-sm soft-shadow border border-surface-variant flex-grow min-h-[250px] relative overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-700" data-alt="A highly detailed overhead map view of a lush, green agricultural valley in California. The map style is modern, bright, and slightly stylized, highlighting winding dirt roads, vibrant green crop circles, and a small farmhouse cluster. The aesthetic is clean and premium, consistent with a high-end organic farm brand." data-location="Greenbelt County, CA" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9mOLGeqaQ3os37FOVuOEAYA50htlMILEMfZSF4R7XlNhL2vcgYPmBBJrVPlJGh1VmeHSm71K34MgX0r5c4knfzY-dym7M2_rdmkEWm4AHvdDRuOaPHyRdNGdZS-s4XghRFI1buFMOxQxgwdrHvJ0FHAbwEuSH9vG2s5mmU-iJt-iNXu0it7gLUekmS23fzswRk8Fa7ksfe06GgAMWzi2-izVYQv4hMnzOnykgIx4BDWzjD_wDH4psWg"/>
+<div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-sm rounded-lg p-3 flex items-center justify-between shadow-sm">
+<span class="font-label-md text-label-md text-on-surface">Visit our Farm Store</span>
+<button class="text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="directions">directions</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section (Asymmetric layout) -->
+<section class="mt-xl py-xl border-t border-surface-variant">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<div class="md:col-span-1">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-md">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                        Find quick answers to common queries about our produce, delivery schedules, and farming methods.
+                    </p>
+</div>
+<div class="md:col-span-2 flex flex-col gap-md">
+<!-- FAQ Item 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-md border border-surface-variant cursor-pointer hover:shadow-sm transition-all group">
+<div class="flex justify-between items-center mb-sm">
+<h4 class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">What are your delivery timings?</h4>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors" data-icon="expand_more">expand_more</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            We deliver fresh produce directly to your door every Tuesday and Friday between 8:00 AM and 6:00 PM. You'll receive an ETA notification on the day of delivery.
+                        </p>
+</div>
+<!-- FAQ Item 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-md border border-surface-variant cursor-pointer hover:shadow-sm transition-all group">
+<div class="flex justify-between items-center mb-sm">
+<h4 class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">Are all your products certified organic?</h4>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors" data-icon="expand_more">expand_more</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant hidden">
+                            Yes, all produce grown on our main farm holds USDA Organic certification. For partner farms in our marketplace, we require strict adherence to chemical-free growing practices.
+                        </p>
+</div>
+<!-- FAQ Item 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-md border border-surface-variant cursor-pointer hover:shadow-sm transition-all group">
+<div class="flex justify-between items-center mb-sm">
+<h4 class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">Can I visit the farm?</h4>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors" data-icon="expand_more">expand_more</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant hidden">
+                            Absolutely! We host guided farm tours on the first Saturday of every month. Please use the contact form above to book a spot in advance.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-lowest font-label-md text-label-md w-full mt-xl flat no shadows cursor-pointer">
+<div class="flex flex-col md:flex-row justify-between items-start gap-lg px-lg py-xl max-w-7xl mx-auto">
+<div class="flex flex-col gap-sm">
+<span class="font-headline-md text-headline-md text-primary">Fresh From Farm</span>
+<span class="text-on-surface-variant dark:text-on-surface font-body-md">© 2024 Fresh From Farm. Rooted in Transparency.</span>
+</div>
+<div class="flex flex-wrap gap-md">
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary transition-colors" href="#">Sustainability Report</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary transition-colors" href="#">Farmer Support</a>
+<a class="text-secondary dark:text-secondary-fixed font-bold hover:underline hover:text-primary transition-colors" href="#">Contact Us</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple JS for FAQ toggling
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqs = document.querySelectorAll('.group');
+            faqs.forEach(faq => {
+                faq.addEventListener('click', () => {
+                    const p = faq.querySelector('p');
+                    const icon = faq.querySelector('.material-symbols-outlined');
+                    
+                    if (p.classList.contains('hidden')) {
+                        p.classList.remove('hidden');
+                        icon.textContent = 'expand_less';
+                    } else {
+                        // Only close if it's not the first one (just to show one open by default)
+                        p.classList.add('hidden');
+                        icon.textContent = 'expand_more';
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>
