@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fresh From Farm - Marketplace</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#78dc77",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f2f4f2",
+                        "outline": "#72796e",
+                        "on-primary-fixed": "#002201",
+                        "on-tertiary-container": "#f6b900",
+                        "on-surface-variant": "#42493e",
+                        "on-background": "#191c1b",
+                        "primary-fixed": "#bcf0ae",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "background": "#f8faf8",
+                        "tertiary-fixed": "#ffdf9e",
+                        "secondary-container": "#91f78e",
+                        "primary-fixed-dim": "#a1d494",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#191c1b",
+                        "surface-bright": "#f8faf8",
+                        "on-tertiary-fixed-variant": "#5b4300",
+                        "surface-container-highest": "#e1e3e1",
+                        "inverse-surface": "#2e3130",
+                        "surface-tint": "#3b6934",
+                        "on-primary-container": "#9dd090",
+                        "primary": "#154212",
+                        "primary-container": "#2d5a27",
+                        "inverse-primary": "#a1d494",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed": "#261a00",
+                        "secondary": "#006e1c",
+                        "on-secondary-container": "#00731e",
+                        "surface-dim": "#d8dad9",
+                        "surface-variant": "#e1e3e1",
+                        "on-primary-fixed-variant": "#23501e",
+                        "tertiary-fixed-dim": "#fabd00",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#4b3600",
+                        "inverse-on-surface": "#eff1ef",
+                        "surface-container": "#eceeec",
+                        "outline-variant": "#c2c9bb",
+                        "on-secondary-fixed": "#002204",
+                        "surface": "#f8faf8",
+                        "surface-container-high": "#e6e9e7",
+                        "tertiary-container": "#674c00",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#94f990",
+                        "on-secondary-fixed-variant": "#005313"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "16px",
+                        "unit": "4px",
+                        "xl": "32px",
+                        "lg": "24px",
+                        "gutter": "16px",
+                        "xs": "4px",
+                        "margin-mobile": "20px",
+                        "sm": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "headline-xl": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .texture-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col relative">
+<div class="absolute inset-0 texture-overlay z-0 fixed"></div>
+<!-- Top Navigation Bar -->
+<header class="w-full top-0 sticky bg-surface/80 backdrop-blur-md shadow-sm z-50">
+<div class="flex justify-between items-center px-lg py-md max-w-7xl mx-auto">
+<a class="flex items-center gap-sm" href="index.html">
+<img alt="Fresh From Farm Logo" class="h-8 w-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMwJox8utxjOB226C8OtlkR2LYV2mE6CkUSHKGuv9stSfhZwB4RKmp0xzVo7WiFZzevJzUo3O3w8o6biRPRcxj4lPs2DPaMkYEpIc7B2hvE-drzUNABhvoh4sV5_LOwcPemNP62egWiVUX4hQlEL4Thhsb2RioTOrGRLepsQasacPne7GXuGlKITdY-QRI1GBErjtqIOHz_KELRjwanvzqHwpsmH4JGLMv36WgPYH0hCc3Ei-ZM8WJqZ97nWhKBQgxvO4"/>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary">Fresh From Farm</span>
+</a>
+<nav class="hidden md:flex gap-lg items-center">
+<a class="font-body-md text-body-md text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 transition-all active:scale-95" href="marketplace.html">Marketplace</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200 transition-all active:scale-95" href="#">Bulk Orders</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200 transition-all active:scale-95" href="#">Farm Stories</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200 transition-all active:scale-95" href="about.html">About Us</a>
+</nav>
+<div class="flex items-center gap-sm">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow max-w-7xl mx-auto w-full px-margin-mobile md:px-lg py-xl relative z-10">
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="flex text-on-surface-variant font-label-md mb-xl">
+<ol class="inline-flex items-center space-x-1 md:space-x-3">
+<li class="inline-flex items-center">
+<a class="inline-flex items-center hover:text-primary transition-colors" href="index.html">
+                        Home
+                    </a>
+</li>
+<li>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-sm mx-1">chevron_right</span>
+<span class="text-primary font-bold ml-1 md:ml-2">Marketplace</span>
+</div>
+</li>
+</ol>
+</nav>
+<div class="flex flex-col md:flex-row gap-xl">
+<!-- Sidebar -->
+<aside class="w-full md:w-64 flex-shrink-0">
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-sm border border-outline-variant/30 sticky top-[100px]">
+<h2 class="font-headline-md text-headline-md text-primary mb-md">Filters</h2>
+<!-- Categories -->
+<div class="mb-lg">
+<h3 class="font-label-md text-label-md text-on-surface mb-sm">Categories</h3>
+<ul class="space-y-2 font-body-md text-body-md text-on-surface-variant">
+<li><label class="flex items-center gap-2 cursor-pointer hover:text-primary"><input checked="" class="rounded text-primary focus:ring-primary border-outline-variant" type="checkbox"/> Vegetables</label></li>
+<li><label class="flex items-center gap-2 cursor-pointer hover:text-primary"><input class="rounded text-primary focus:ring-primary border-outline-variant" type="checkbox"/> Fruits</label></li>
+<li><label class="flex items-center gap-2 cursor-pointer hover:text-primary"><input class="rounded text-primary focus:ring-primary border-outline-variant" type="checkbox"/> Grains</label></li>
+<li><label class="flex items-center gap-2 cursor-pointer hover:text-primary"><input class="rounded text-primary focus:ring-primary border-outline-variant" type="checkbox"/> Dairy</label></li>
+<li><label class="flex items-center gap-2 cursor-pointer hover:text-primary"><input class="rounded text-primary focus:ring-primary border-outline-variant" type="checkbox"/> Organic Staples</label></li>
+</ul>
+</div>
+<hr class="border-outline-variant/30 my-md"/>
+<!-- Price Range -->
+<div class="mb-lg">
+<h3 class="font-label-md text-label-md text-on-surface mb-sm">Price Range</h3>
+<input class="w-full h-2 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary" max="100" min="0" type="range" value="50"/>
+<div class="flex justify-between text-label-sm text-on-surface-variant mt-2">
+<span>$0</span>
+<span>$100+</span>
+</div>
+</div>
+<hr class="border-outline-variant/30 my-md"/>
+<!-- Farm Origin -->
+<div class="mb-lg">
+<h3 class="font-label-md text-label-md text-on-surface mb-sm">Farm Origin</h3>
+<ul class="space-y-2 font-body-md text-body-md text-on-surface-variant">
+<li><label class="flex items-center gap-2 cursor-pointer hover:text-primary"><input class="rounded text-primary focus:ring-primary border-outline-variant" type="checkbox"/> Sunrise Organics</label></li>
+<li><label class="flex items-center gap-2 cursor-pointer hover:text-primary"><input class="rounded text-primary focus:ring-primary border-outline-variant" type="checkbox"/> Green Valley</label></li>
+<li><label class="flex items-center gap-2 cursor-pointer hover:text-primary"><input class="rounded text-primary focus:ring-primary border-outline-variant" type="checkbox"/> Happy Cow Dairy</label></li>
+</ul>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<div class="flex-grow">
+<!-- Sorting & View -->
+<div class="flex flex-col sm:flex-row justify-between items-center mb-lg bg-surface-container-lowest p-sm rounded-lg shadow-sm border border-outline-variant/30 gap-sm">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Sort by:</span>
+<select class="bg-transparent border-none font-body-md text-body-md text-primary focus:ring-0 cursor-pointer">
+<option>Popularity</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Newest</option>
+</select>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<button class="p-1 hover:text-primary transition-colors text-primary"><span class="material-symbols-outlined">grid_view</span></button>
+<button class="p-1 hover:text-primary transition-colors"><span class="material-symbols-outlined">view_list</span></button>
+</div>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_-4px_rgba(21,66,18,0.1)] group hover:-translate-y-1 transition-all duration-300 relative border border-outline-variant/20 flex flex-col h-full">
+<div class="absolute top-sm right-sm z-10 flex gap-2">
+<span class="bg-secondary-fixed-dim text-on-primary-fixed font-label-sm px-2 py-1 rounded-full">Organic</span>
+</div>
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A close-up shot of vibrant, ripe organic heirloom tomatoes resting in a rustic wooden crate. The lighting is soft and natural, evoking a sunny morning at a high-end farmer's market. The tomatoes feature deep reds, yellows, and purples, standing out against the clean white background aesthetic. The overall mood is fresh, healthy, and premium." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUppYvQoJZA_FsGQEGakN1fpXBiZyWwqpz3go3kHdo65zKxzYxojMfdRF1SIASuR0UzLjtT2Exw1S00EfBDu8rja9Qbl-lwsiKBFTgBhScNGFCJo1hmngiksFm7pevuRrdnSr-mA9fHaVizQIH-5hgfLl47pkbCi-OLMVKmjtByOyWu-AegMtRQLw9yiF8VjYKl2z8-xF57hOHDa7VD3n1DhnGx-ddbBFOIoWsLVDkzMPAhjW23M01NQ')"></div>
+<button class="absolute bottom-sm right-sm bg-surface/80 backdrop-blur p-2 rounded-full text-on-surface hover:text-error transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-md text-[18px] text-on-surface font-semibold leading-tight">Organic Heirloom Tomatoes</h3>
+</div>
+<p class="font-label-sm text-on-surface-variant flex items-center gap-1 mb-md">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                                Sunrise Organics
+                            </p>
+<div class="mt-auto flex justify-between items-center">
+<span class="font-body-lg text-primary font-bold">$4.99 <span class="text-sm font-normal text-on-surface-variant">/ kg</span></span>
+<button class="bg-primary-container text-on-primary rounded-lg px-4 py-2 font-label-md hover:bg-primary transition-colors flex items-center gap-2">
+                                    Add <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_-4px_rgba(21,66,18,0.1)] group hover:-translate-y-1 transition-all duration-300 relative border border-outline-variant/20 flex flex-col h-full">
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Freshly harvested potatoes covered in a light dusting of rich, dark soil, presented in a minimal white bowl. The composition is clean and modern, emphasizing the raw, organic nature of the produce. Gentle, diffused light highlights the textures of the potatoes and the earth. The aesthetic aligns with a premium, farm-to-table corporate design." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7mj48yGZGMUXxFzdiF5V0WLJ2bJb4sireEce7_vJnsqpLvHplspneJ3a4FyeKSyjbemwmnqnh6tEy-n0snXzY053o7GiOIsWPvzAkiOnCv8piJDWRbppeXWQKtHm7yCVfqTeGMgvq16vFaxzccdmniO6om6K0LPJRE1Zcc3qWWsJxxT8zaRB72DiMPvZ6F1htqncxIMIKZQfWOQ_kBBUDj_j41_1by0hwv0qFwow0VLGW1ucxFbdfJQ')"></div>
+<button class="absolute bottom-sm right-sm bg-surface/80 backdrop-blur p-2 rounded-full text-on-surface hover:text-error transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-md text-[18px] text-on-surface font-semibold leading-tight">Farm Fresh Potatoes</h3>
+</div>
+<p class="font-label-sm text-on-surface-variant flex items-center gap-1 mb-md">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                                Green Valley Farms
+                            </p>
+<div class="mt-auto flex justify-between items-center">
+<span class="font-body-lg text-primary font-bold">$2.50 <span class="text-sm font-normal text-on-surface-variant">/ kg</span></span>
+<button class="bg-primary-container text-on-primary rounded-lg px-4 py-2 font-label-md hover:bg-primary transition-colors flex items-center gap-2">
+                                    Add <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_-4px_rgba(21,66,18,0.1)] group hover:-translate-y-1 transition-all duration-300 relative border border-outline-variant/20 flex flex-col h-full">
+<div class="absolute top-sm right-sm z-10 flex gap-2">
+<span class="bg-tertiary-fixed-dim text-on-tertiary-fixed font-label-sm px-2 py-1 rounded-full">New</span>
+</div>
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A beautifully arranged bunch of crisp, leafy greens including kale and spinach, resting on a clean, light-colored surface with subtle organic texture. The bright green hues of the vegetables pop against the minimalist background. The lighting is crisp and bright, suggesting absolute freshness and high quality. The image feels professional yet grounded in nature." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBcsOkkEKqZWmY91lFtgR_c0zz2GlI6SefnpzL9jBN3MXsUD6gMI9Zz_19dR7m5Tg44LNFTFSSkv5v-N3p7TxriPnyOXe78tD_GVZl2XfUVsxfch4iJjZp4o0a0uQgSHNdK5mAVBhnnxBDW4PVNlal9cOOZ4F9WDeLyaWXpTNa6kXPIPFy68jWExOVG3Z0dVVcFltbgIUF2m37JJ11uJsQUBpLLHf63WwmKIRPapeXGK0iByPPrGw50Kg')"></div>
+<button class="absolute bottom-sm right-sm bg-surface/80 backdrop-blur p-2 rounded-full text-on-surface hover:text-error transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-md text-[18px] text-on-surface font-semibold leading-tight">Crisp Leafy Greens Blend</h3>
+</div>
+<p class="font-label-sm text-on-surface-variant flex items-center gap-1 mb-md">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                                Sunrise Organics
+                            </p>
+<div class="mt-auto flex justify-between items-center">
+<span class="font-body-lg text-primary font-bold">$3.20 <span class="text-sm font-normal text-on-surface-variant">/ bunch</span></span>
+<button class="bg-primary-container text-on-primary rounded-lg px-4 py-2 font-label-md hover:bg-primary transition-colors flex items-center gap-2">
+                                    Add <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-xl bg-surface-container-highest dark:bg-surface-container-lowest z-10 relative">
+<div class="flex flex-col md:flex-row justify-between items-start gap-lg px-lg py-xl max-w-7xl mx-auto">
+<div class="flex flex-col gap-sm">
+<span class="font-headline-md text-headline-md text-primary">Fresh From Farm</span>
+<p class="font-label-md text-label-md text-on-surface-variant">© 2024 Fresh From Farm. Rooted in Transparency.</p>
+</div>
+<nav class="flex flex-wrap gap-x-lg gap-y-sm font-label-md text-label-md">
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Sustainability Report</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Farmer Support</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Contact Us</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:underline hover:text-primary cursor-pointer" href="#">Terms of Service</a>
+</nav>
+</div>
+</footer>
+</body></html>
